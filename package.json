@@ -4,22 +4,22 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "db": "pscale.exe connect slapsgf main --port 3309",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "pretty": "prettier --write .",
     "migrate": "npx prisma migrate dev",
-    "push": "npx prisma push",
+    "push": "npx prisma db push",
     "prisma": "npx prisma studio"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.3",
-    "@prisma/client": "^3.12.0",
+    "@prisma/client": "^3.15.2",
     "next": "^12.1.4",
-    "next-auth": "^4.3.1",
+    "next-auth": "^4.6.1",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.8",
-    "prisma": "^3.12.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "tailwindcss": "^3.1.4"
@@ -30,6 +30,7 @@
     "@types/react-dom": "18.0.0",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.4",
+    "prisma": "^3.15.2",
     "typescript": "4.6.3"
   }
 }
