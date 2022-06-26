@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Date from "./date";
+import Date from "../lib/date";
 import { PostData } from "../lib/posts";
 import { getMDXComponent } from "mdx-bundler/client";
 import { useRouter } from "next/router";

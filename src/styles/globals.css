@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #EDF2F4;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #8D99AE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EF233C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D90429;
+}

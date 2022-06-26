@@ -1,9 +1,14 @@
 import { getAllPostIds, getPostData, PostData } from "../../lib/posts";
 import { GetStaticProps, GetStaticPaths } from "next";
-import Post from "../../components/post";
+import Post from "../../components/Post";
+import PostLayout from "../../components/PostLayout";
 
 export default function PostPage({ postData }: { postData: PostData }) {
-    return <Post postData={postData} />
+    return (
+      <PostLayout>
+        <Post postData={postData} />
+      </PostLayout>
+    )
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {

@@ -1,6 +1,6 @@
 import { getSortedPostsData, PostData } from '../lib/posts';
 import { GetStaticProps } from "next";
-import Post from "../components/post";
+import Post from "../components/Post";
 
 export default function Index({ allPostsData }: { allPostsData: PostData[] }) {
   return (
