@@ -17,3 +17,6 @@ module.exports = withMDX({
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 })
 module.exports = nextConfig;
+
+const removeImports = require('next-remove-imports')();
+module.exports = removeImports({});

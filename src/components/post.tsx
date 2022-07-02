@@ -11,7 +11,7 @@ export default function Post({ postData }: { postData: PostData }) {
     return (
         <article>
             {router.pathname === "/" ? (
-                <Link href={`posts/${postData.id}`}>
+                <Link href={`posts/post/${postData.id}`}>
                     <a>
                         <h2>
                             {postData.title}

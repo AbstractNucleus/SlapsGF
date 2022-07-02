@@ -18,26 +18,29 @@
     "@next-auth/prisma-adapter": "^1.0.3",
     "@next/mdx": "^12.1.6",
     "@prisma/client": "^3.15.2",
+    "@uiw/react-md-editor": "^3.6.0",
     "date-fns": "^2.28.0",
     "esbuild": "^0.14.47",
     "mdx-bundler": "^9.0.1",
     "next": "^12.1.4",
     "next-auth": "^4.6.1",
     "next-plausible": "^3.2.0",
+    "next-remove-imports": "^1.0.6",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.8",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "tailwindcss": "^3.1.4"
+    "save-as-file": "^0.3.0",
+    "tailwindcss": "^3.1.4",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/node": "17.0.23",
-    "@types/prismjs": "^1.26.0",
     "@types/react": "18.0.0",
     "@types/react-dom": "18.0.0",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.4",
-    "prisma": "^3.15.2",
+    "prisma": "^4.0.0",
     "typescript": "4.6.3"
   }
 }
