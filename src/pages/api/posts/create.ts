@@ -12,7 +12,7 @@ export default async function create(req: NextApiRequest, res: NextApiResponse) 
         return;
     }
 
-    const user = await prisma.user.findMany({
+    const user = await prisma.user.findFirst({
         where: {
             email: session.user?.email || undefined
         }
@@ -22,11 +22,7 @@ export default async function create(req: NextApiRequest, res: NextApiResponse) 
         data: {
             title: title,
             content: content,
-            author: {
-                connect: {
-                    id: user.id,
-                },
-            },
+            authorId: user?.id || undefined
         }
     });
 
